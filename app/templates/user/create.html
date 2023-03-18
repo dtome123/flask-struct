@@ -1,0 +1,16 @@
+<!-- app/templates/user/index.html -->
+
+{% extends "base.html" %} {% block title %}User{% endblock %} {% block body %}
+<div class="container">
+  <div class="row">User</div>
+
+  <form class="user" action="http://localhost:5000/user/create" method="POST">
+    <div>Name: <input type="text" name="name" /></div>
+    <div>Username: <input type="text" name="username" /></div>
+    <div>Password: <input type="text" name="password" /></div>
+    <button type="submit" class="btn btn-primary btn-user btn-block">
+      Login
+    </button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+<!-- app/templates/user/index.html -->
+
+{% extends "base.html" %} {% block title %}User{% endblock %} {% block body %}
+<div class="container">
+  <div class="row">User</div>
+  <div>Name: {{user.name}}</div>
+  <div>Avatar: {{user.avatar}}</div>
+  <div>Role: {{user.user_role}}</div>
+</div>
+{% endblock %}
